@@ -5,6 +5,18 @@ import java.util.Scanner;
 public class Uni {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        //3.Сумма цифр массива
+        int myArray[] = {3, 7, 5, 12,};
+        for (int i = 0; i < myArray.length; i++) {
+            int i2 = i + 1;
+            if (i2 >= myArray.length - 1) {
+                i2 = 0;
+                i2 = 0;
+            }
+            int sum = myArray[i] + myArray[i2];
+            System.out.println(sum);
+        }
 //        int n = scanner.nextInt();
 //        int j= 0, t = 0;
 //        int[]arr = new int[n];
@@ -71,13 +83,13 @@ public class Uni {
 //        if (c==d){
 //            System.out.println("DRAW");
 //        }
-        int a = scanner.nextInt();
-        int n, m,d = 0;
-        for (int i = 0; i < a; i++){
-            n = scanner.nextInt();
-            m = scanner.nextInt();
-            d = 19 * m + (n + 239)*(n + 366) / 2;
-            System.out.println(d);
-        }
+//        int a = scanner.nextInt();
+//        int n, m,d = 0;
+//        for (int i = 0; i < a; i++){
+//            n = scanner.nextInt();
+//            m = scanner.nextInt();
+//            d = 19 * m + (n + 239)*(n + 366) / 2;
+//            System.out.println(d);
+//        }
     }
 }
